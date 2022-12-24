@@ -1,0 +1,111 @@
+### Features Glossary:
+<b>request.headers.Host</b> - A property of an HTTP request that refers to the hostname of the server that the client is trying to reach. It is included in the Host request header of the HTTP request.
+The Host request header is used to specify the host and port number of the server that the client wants to connect to. 
+
+<b>request.headers.User-Agent</b> - A string that is sent by the client (e.g., a web browser) to identify itself to the server. It contains information about the client's operating system, browser type and version, and other details.
+
+<b>request.headers.Accept-Encoding</b> - A string that is sent by the client to specify the encoding algorithms that it is capable of accepting in the response. It is used by the server to determine which encoding algorithms to use when sending the response back to the client.
+
+<b>request.headers.Accept</b> - A string that is sent by the client to specify the media types that it is capable of accepting in the response. It is used by the server to determine which media types to include in the response.
+
+<b>request.headers.Connection</b> - A string that is sent by the client to specify the type of connection that it wants to use when communicating with the server. It is used by the server to determine how to handle the request and whether to keep the connection open for further requests.
+
+<b>request.headers.Accept-Language</b> - A string that is sent by the client to specify the languages that it is able to accept in the response. It is used by the server to determine which language to use when serving the response.
+
+<b>request.headers.Sec-Fetch-Site</b> - A string that is sent by the client to specify the type of site that is making the request. It is used by the server to determine whether to enforce certain security policies or behaviors when handling the request.
+The Sec-Fetch-Site header is used to indicate whether the request is being made from a secure context (e.g., an HTTPS page) or an insecure context (e.g., an HTTP page).
+
+Possible values for the Sec-Fetch-Site header:
+none: The request is not being made from a secure context.
+same-origin: The request is being made from the same origin as the current page.
+same-site: The request is being made from the same site as the current page (e.g., from a subdomain).
+cross-site: The request is being made from a different site than the current page.
+
+<b>request.headers.Sec-Fetch-Mode</b> - A string that is sent by the client to specify the type of site that is making the request. It is used by the server to determine whether to enforce certain security policies or behaviors when handling the request.
+The Sec-Fetch-Mode header is used to indicate the mode of the request (e.g., whether the request is a navigation request or a resource request).
+
+Possible values for the Sec-Fetch-Mode header:
+navigate: The request is a navigation request (e.g., a request to load a new page).
+same-origin: The request is for a resource from the same origin as the current page.
+no-cors: The request is for a resource from a different origin, but the server does not support the Cross-Origin Resource Sharing (CORS) protocol.
+cors: The request is for a resource from a different origin and the server supports the CORS protocol
+
+<b>request.headers.Sec-Fetch-User</b> - A string that is sent by the client to indicate whether the request is being made by a user or an automated agent (e.g., a web crawler). It is used by the server to determine whether to enforce certain security policies or behaviors when handling the request.
+
+Possible values for the Sec-Fetch-User header:
+?1: The request is being made by a user.
+?0: The request is being made by an automated agent.
+
+<b>request.headers.Sec-Fetch-Dest</b> - A string that is sent by the client to specify the type of destination that the request is intended for. It is used by the server to determine whether to enforce certain security policies or behaviors when handling the request.
+Used to indicate the type of destination that the request is intended for (e.g., whether the request is for a document, an image, or a style sheet).
+
+Possible values for the Sec-Fetch-Dest header:
+empty: The request is not for a specific destination.
+document: The request is for a document (e.g., an HTML page).
+style: The request is for a style sheet (e.g., a CSS file).
+script: The request is for a script (e.g., a JavaScript file).
+image: The request is for an image (e.g., a JPEG or PNG file).
+font: The request is for a font file.
+object: The request is for an object (e.g., a Flash file).
+audio: The request is for an audio file.
+video: The request is for a video file.
+report: The request is for a report.
+
+<b>request.headers.Set-Cookie</b> - Undefined, maybe a mistake.
+
+The Set-Cookie header consists of one or more name-value pairs that specify the attributes of the cookie. For example, the following Set-Cookie header sets a cookie named sessionid with the value abc123:
+Set-Cookie: sessionid=abc123
+
+<b>request.headers.Date</b> - A string that is sent by the client to specify the date and time at which the request was sent. It is used by the server to determine the age of the request and to adjust its caching policies accordingly.
+
+<b>request.method</b> - A property of an HTTP request object that specifies the HTTP method that was used to make the request. HTTP methods, also known as verbs, are used to specify the type of operation that is being performed in the request.
+
+The most commonly used HTTP methods:
+GET: The GET method is used to retrieve a resource from the server.
+POST: The POST method is used to send data to the server for processing.
+PUT: The PUT method is used to update a resource on the server.
+DELETE: The DELETE method is used to delete a resource on the server.
+
+<b>request.url</b> - A property of an HTTP request object that specifies the URL of the request. The URL is a string that identifies the resource on the server that the request is intended for. It consists of the protocol, hostname, and path of the resource, as well as any query parameters that are included in the request.
+
+<b>request.body</b> - A property of an HTTP request object that contains the body of the request. The body of the request is the data that is sent to the server as part of the request. It is typically used to send data to the server for processing, such as form data or JSON payloads.
+
+<b>request.Attack_Tag</b> - The type of attacks:
+SQL Injection - One of the most common web attacks, uses backend SQL queries to inject code directly to the servers SQL database.
+
+Directory Traversal - Uses basic terminal traversal strings in order to reach folders on the servers host that were not meant to be accessed by the user.
+
+Remote Code Execution (RCE) - Some may call it the most critical exploit in any system, it allows the attacker to run code remotely on the local machine.
+
+Cookie Injection - Cookies injected to a session they were not originated from. This is used sometimes to access another user illegitimately by using his tokens.
+
+Cross Site Scripting (XSS) - Another very widely used web vulnerability XSS enables the attacker to run client-side code that will eventually affect sensitive processes handled by the backend.
+
+Log4J - One of the most famous recently patched vulnerabilities. An exploit in JAVA servers using the famous Apache logging library that enables to run code remotely (This is actually an "easy" RCE exploit) on the server.
+
+Log Forging - A technique of using the system to print fake or fraudulent logs. This enables an attacker to "inject" other user logs or fake his own attack logs in order to make it harder for any security researcher to find out what he really did during his access.
+
+<b>response.status</b> - A property of an HTTP response object that specifies the status code of the response. The status code is a three-digit integer that indicates the status of the response.
+
+The most common classes of status codes:
+1xx: Informational status codes
+2xx: Success status codes
+3xx: Redirection status codes
+4xx: Client error status codes
+5xx: Server error status codes
+
+<b>response.headers.Content-Type</b> - A string that is sent by the server in the response to a client to specify the media type of the response body. The media type, also known as the MIME type, is a string that describes the format of the response body.
+
+<b>response.headers.Content-Length</b> - A string that is sent by the server in the response to a client to specify the length of the response body in bytes. The length of the response body is the number of bytes that are contained in the response body.
+
+<b>response.status_code</b> - Same as response.status	
+
+<b>response.body</b> - A property of an HTTP response object that contains the body of the response. The body of the response is the data that is sent to the client as part of the response. It is typically used to send the result of a request back to the client, such as the content of a webpage or the data from a server-side processing operation.
+
+<b>request.headers.Cookie</b> -  A string that is sent by the client to the server in an HTTP request to pass along a small amount of data, known as a cookie, that the server can use to maintain state. The Cookie header consists of a string that specifies the name and value of the cookie, as well as any additional parameters that control the behavior of the cookie.
+
+<b>response.headers.Location</b> - A string that is sent by the server in the response to a client to specify the URL of a resource that has been moved to a new location. The Location header is typically used in conjunction with 3xx (redirection) status codes, such as 301 Moved Permanently and 307 Temporary Redirect.
+
+<b>request.headers.Content-Length</b> - A string that is sent by the client to the server in an HTTP request to specify the length of the request body in bytes. The length of the request body is the number of bytes that are contained in the request body.
+
+<b>response.headers.Set-Cookie</b> - A string that is sent by the server in the response to a client to set a cookie on the client's machine. A cookie is a small piece of data that is stored on the client's machine and is used to identify the client when it makes subsequent requests to the server.

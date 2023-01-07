@@ -47,8 +47,11 @@ After training and testing our models on the provided datasets, we achieved perf
   <img src="https://i.ibb.co/qByGGSG/Untitled-5-copy.jpg" width="50%" />
 </div>
 
-## Datasets Download Link:
-[All Datasets zip file](https://drive.google.com/file/d/15MxHRAdwPXCENACwn8wLMkb98ZCjDeh6/view?usp=share_link)
+## Datasets:
+To download and use the datasets for the Cisco-API-security-challenge, follow these steps:
+1. Click on the following link to download the datasets: [All Datasets zip file](https://drive.google.com/file/d/15MxHRAdwPXCENACwn8wLMkb98ZCjDeh6/view?usp=share_link)
+2. Extract the contents of the zip file to a directory on your local machine.
+3. Move the extracted datasets files into the datasets directory.
 
 ## Requirements
 * Python 3.6 or higher

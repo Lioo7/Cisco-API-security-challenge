@@ -212,6 +212,13 @@ cython_debug/
 poetry.toml
 
 # Dataset
-datasets
+datasets/dataset_1_train.json
+datasets/dataset_1_val.json
+datasets/dataset_2_train.json
+datasets/dataset_2_val.json
+datasets/dataset_3_train.json
+datasets/dataset_3_val.json
+datasets/dataset_4_train.json
+datasets/dataset_4_val.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,jupyternotebooks

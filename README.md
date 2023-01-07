@@ -39,6 +39,7 @@ There are several advantages to using XGBoost for this task:
 
 * Flexibility: XGBoost allows for the use of a wide range of parameters and configurations, making it possible to fine-tune the model to the specific characteristics of the dataset.
 
+## Results
 After training and testing our models on the provided datasets, we achieved perfect scores for all the models, with 'Accuracy': 1.0, 'Precision': 1.0, 'Recall': 1.0, and 'F1': 1.0.
 
 <div style="text-align:center">

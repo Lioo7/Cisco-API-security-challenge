@@ -221,4 +221,7 @@ datasets/dataset_3_val.json
 datasets/dataset_4_train.json
 datasets/dataset_4_val.json
 
+# Presentation
+presentation.mp4
+
 # End of https://www.toptal.com/developers/gitignore/api/python,macos,jupyternotebooks
